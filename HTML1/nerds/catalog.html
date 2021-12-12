@@ -215,8 +215,8 @@
           <div class="footer-adress">
             <p class="contacts-heading">NЁRDS DESIGN STUDIO</p>
             <p class="contacts-text">наб. Реки Карповки,<br>5 лит П, Санкт-Петербург</p>
-            <a href="tel:+78005558628" class="contacts-phone">+7 800 555-86-28</a>
-            <a href="#" class="button button-callback">Напишите нам</a>
+            <a class="contacts-phone" href="tel:+78005558628" aria-label="Позвонить нам">+7 800 555-86-28</a>
+            <button class="button button-callback" aria-label="Открыть форму обратной связи">Напишите нам</button>
           </div>
         </div>
       </section>
@@ -247,14 +247,15 @@
       <form action="https://echo.htmlacademy.ru" method="post" class="writeus-form">
         <div class="writeus-wrapper">
           <label class="writeus-name-label" for="name">Ваше имя:</label>
-          <input class="writeus-name-input" type="text" name="name" id="name" placeholder="Имя Фамилия">
+          <input class="writeus-name-input" type="text" name="name" id="name" placeholder="Имя Фамилия" aria-label="Введите имя">
           <label class="writeus-email-label" for="email">Ваш email:</label>
-          <input class="writeus-email-input" type="text" name="email" id="email" placeholder="email@example.com">
+          <input class="writeus-email-input" type="text" name="email" id="email" placeholder="email@example.com" aria-label="Введите электроную почту">
         </div>
         <label class="writeus-textarea-label" for="msg">Текст письма:</label>
-        <textarea class="writeus-textarea" name="msg" id="msg" cols="30" rows="10">В свободной форме</textarea>
+        <textarea class="writeus-textarea" name="msg" id="msg" cols="30" rows="10" aria-label="Введите сообщение">В свободной форме</textarea>
         <input type="submit" value="Отправить" class="button button-submit">
       </form>
     </section>
+    <script src="js/scritpt.js"></script>
   </body>
 </html>

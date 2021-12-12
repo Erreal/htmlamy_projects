@@ -194,6 +194,9 @@ img {
   display: block;
   margin: 0 auto;
 }
+.features-list .item-hidden {
+  display: none;
+}
 .slider {
   position: relative;
 }
@@ -438,8 +441,16 @@ img {
 }
 .footer-contacts {
   background-color: var(--gray-color);
+  position: relative;
   width: 100%;
   margin: 0;
+  padding: 0;
+}
+.yandex-map {
+  position: absolute;
+  bottom: 0;
+  border: none;
+  margin: auto;
   padding: 0;
 }
 .footer-contacts-wrapper {
@@ -449,6 +460,8 @@ img {
   min-height: 250px;
   padding-top: 54px;
   padding-bottom: 54px;
+  position: relative;
+  z-index: 2;
 }
 .footer-adress {
   width: 319px;
@@ -571,7 +584,8 @@ img {
   left: 50%;
   margin-left: -480px;
   background-color: var(--white-color);
-  box-shadow: 0px 20px 40px var(--writeus-shadow) ;
+  box-shadow: 0px 20px 40px var(--writeus-shadow);
+  z-index: 100;
 }
 .writeus h2{
   font-weight: bold;
