@@ -568,9 +568,10 @@
   margin-left: 6px;
 }
 .main-section-button {
-  padding: 11px 27px 9px;
-  margin-right: -5px;
-
+  padding: 10px 20px 9px;
+  margin-right: -7px;
+  width: 152px;
+  text-align: center;
 }
 .best-goods-list {
   margin: 0;
@@ -579,6 +580,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  padding-top: 3px;
 }
 .list-product-item {
   display: block;
@@ -736,6 +738,50 @@
 .list-bookmark-button:active {
   border: 3px solid var(--button-bookmark-active);
   color: var(--button-bookmark-active);
+}
+.best-vendors {
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+.best-vendors-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  padding-top: 3px;
+}
+.best-vendors-item {
+  width: 220px;
+  box-sizing: border-box;
+  min-height: 145px;
+  margin-right: 20px;
+  margin-top: 20px;
+  border: 1px solid var(--gradient-grey);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.best-vendors-item:nth-child(4n) {
+  margin-right: 0;
+}
+.best-vendors-item:hover {
+  box-shadow: 0px 4px 20px var(--product-list-shadow);
+}
+.best-vendors-item:active {
+  opacity: 0.5;
+}
+.services {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: var(--basic-background);
+}
+.services-heading {
+  font-family: Cuprum;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
 }
 .visually-hidden {
   position: absolute;
