@@ -20,7 +20,7 @@
             <img class="logo-image" src="img/logo-header.png" alt="Логотип магазина" width="228" height="55">
           </a>
           <form class="search" action="">
-            <input class="search-text" type="text" value="Поиск:">
+            <input class="search-text" type="text" placeholder="Поиск:">
             <input class="search-btn" type="submit" value="">
           </form>
           <a class="bookmarks-link" href="">Закладки: <span>0</span></a>
@@ -118,8 +118,8 @@
                 </li>
               </ul>
               <div class="slider-control">
-                <div class="slider-left"></div>
-                <div class="slider-right"></div>
+                <button class="slider-left"></button>
+                <button class="slider-right"></button>
                 <div class="control-buttons">
                   <button class="control-button active" aria-label="Переключиться на слайд 1"></button>
                   <button class="control-button" aria-label="Переключиться на слайд 2"></button>
@@ -241,16 +241,23 @@
         <div class="container">
           <div class="services-wrapper">
             <h2 class="services-heading">Сервисы</h2>
-            <p>Хороший интернет-магазин отличается от плохого не только ценами! <br>
+            <p class="services-text">Хороший интернет-магазин отличается от плохого не только ценами! <br>
               Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
             <div class="services-inner-wrapper">
               <ul class="services-nav-buttons">
-                <li class="service-nav-button"><button>Доставка</button></li>
-                <li class="service-nav-button"><button>Гарантия</button></li>
-                <li class="service-nav-button"><button>Кредит</button></li>
+                <li class="service-nav-item">
+                  <button class="service-nav-button service-button-active">Доставка</button>
+                </li>
+                <li class="service-nav-item">
+                  <button class="service-nav-button">Гарантия</button>
+                </li>
+                <li class="service-nav-item">
+                  <button class="service-nav-button">Кредит</button>
+                </li>
+                <li class="service-nav-item"><img src="img/services-shadow.png" alt=""></li>
               </ul>
               <div class="servuces-content">
-                <div class="service-delivery-content">
+                <div class="service-delivery-content service-slide">
                   <p class="service-content-header">
                     Доставка
                   </p>
@@ -260,9 +267,9 @@
                     Ведь мы неплохо заработаем, <br>
                     поднимая его на ваш этаж!
                   </p>
-                  <a href="#" class="button service-button">ОТПРАВИТЬ ЗАЯВКУ</a>
+
                 </div>
-                <div class="service-guaranty-content hidden">
+                <div class="service-guaranty-content service-slide hidden">
                   <p class="service-content-header">
                     Гарантия
                   </p>
@@ -273,9 +280,9 @@
                     <br>Мы обменяем сгоревший товар на новый.
                     <br>Дом уж восстановите как-нибудь сами.
                   </p>
-                  <a href="#" class="button service-button">ОТПРАВИТЬ ЗАЯВКУ</a>
+
                 </div>
-                <div class="service-credit-content hidden">
+                <div class="service-credit-content service-slide hidden">
                   <p class="service-content-header">
                     Кредит
                   </p>
