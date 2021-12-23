@@ -12,41 +12,85 @@
       <nav class="navigation">
         <ul class="navigation__list">
           <li class="navigation__item">
-            <a href="/blank.html" class="navigation__link navigation__link--current">Главная</a>
+            <a href="/blank.html" class="navigation__link">Главная</a>
           </li>
           <li class="navigation__item">
             <a href="/blank.html" class="navigation__link">Каталог продукции</a>
           </li>
           <li class="navigation__item">
-            <a href="/blank.html" class="navigation__link">Подбор программы</a>
+            <a href="/blank.html" class="navigation__link navigation__link--current">Подбор программы</a>
           </li>
         </ul>
       </nav>
-      <section class="promo">
-        <h1 class="page-heading">Функциональное питание для котов</h1>
-        <p class="promo__slogan">Занялся собой? Займись котом!</p>
-        <img src="" alt="" class="promo__image">
-        <a href="" class="promo__button button">Подобрать программу</a>
-      </section>
     </header>
     <main class="page-main">
-      <h class="page-main__header">Подбор программы</h1>
+      <h1 class="page-main__header">Подбор программы</h1>
       <p class="page-main__text">Заполните анкету, и мы подберем <br>
         программу питания для вашего кота</p>
       <form class="order-form" action="echo.htmlacademy.ru">
-        <fieldset class="cat-info">
-          <label class="cat-info__name-label">
-            <input class="cat-info__name-field" type="text" name="cat-name">
+        <fieldset class="order-form__section">
+          <legend class="visually-hidden">Информация о кошке</legend>
+          <label class="order-form__label">
+            Имя:*
+            <input class="order-form__field" type="text" name="cat-name">
           </label>
-          <label class="cat-info__weight-label">
-            <input class="cat-info__weight-field" type="text" name="cat-name">
+          <label class="order-form__label">
+            Вес(кг):*
+            <input class="order-form__field" type="text" name="cat-weight">
           </label>
-          <label class="cat-info__age-label">
-            <input class="cat-info__agefield" type="text" name="cat-name">
+          <label class="order-form__label">
+
+            <input class="order-form__field" type="text" name="cat-age">
+          </label>
+          <ul class="order-form__goal-list goal-list">
+            <li class="goal-list__item">
+              <label class="order-form__label">
+                <input class="order-form__radio" type="radio" name="goal">
+              </label>
+            </li>
+            <li class="goal-list__item">
+              <label class="order-form__label">
+                <input class="order-form__radio" type="radio" name="goal">
+              </label>
+            </li>
+            <li class="goal-list__item">
+              <label class="order-form__label">
+                <input class="order-form__radio" type="radio" name="goal">
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="order-form__section order-form__section--with-border">
+          <legend class="order-form__heading">Контактные данные (владельца кота)</legend>
+          <label class="order-form__label order-form__label--email">
+            e-mail:*
+            <input class="order-form__field order-form__field--email" type="text" name="email">
+          </label>
+          <label class="order-form__label order-form__label--phone">
+            телефон:*
+            <input class="order-form__field order-form__field--phone" type="text" name="phone">
           </label>
         </fieldset>
-        <fieldset class="cat-goal">
-
+        <fieldset class="order-form__section order-form__section--with-border">
+          <legend class="order-form__heading">Комментарий</legend>
+          <textarea class="order-form__message" name="message" cols="30" rows="10">Расскажите о повадках кота</textarea>
+        </fieldset>
+        <fieldset class="order-form__section order-form__section--with-border">
+          <legend class="order-form__heading">Дополнительно</legend>
+          <ul class="order-form__option-list option-list">
+            <li class="option-list__item">
+              <label for="" class="order-form__label"></label>
+            </li>
+            <li class="option-list__item">
+              <label for="" class="order-form__label"></label>
+            </li>
+            <li class="option-list__item">
+              <label for="" class="order-form__label"></label>
+            </li>
+            <li class="option-list__item">
+              <label for="" class="order-form__label"></label>
+            </li>
+          </ul>
         </fieldset>
       </form>
     </main>
